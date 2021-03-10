@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Send</title>
+    <link rel="stylesheet" href="">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .box{
+            height: 150px;
+            width: 70%;
+            border:1px solid black;
+            align-items:center;
+            justify-content: space-around;
+        }
+        input{
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+    <form action="textlocal.php" method="POST" accept-charset="utf-8">
+        Mobile:<input type="tel" name="mno" value="" placeholder=""><br>
+        Msg:<input type="text" name="msg" value="" placeholder=""><br>
+        <input type="submit" name="ok" value="Send">
+    </form>
+    </div>
+</body>
+</html>

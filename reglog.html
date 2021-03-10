@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Doctor</title>
+	<link rel="stylesheet" href="reglog.css">
+	<link rel="stylesheet" href="./fontawesome/css/all.css">
+	  <script src="jquery-1.10.2.min.js"></script>
+	   <script src="JQUERY%20Main.js"></script>
+	   <link href="https://fonts.googleapis.com/css?family=Crimson+Pro&display=swap" rel="stylesheet">
+	   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	   <script src="https://kit.fontawesome.com/62d7f08aa0.js"></script>
+
+</head>
+<body>
+	<div class="back">
+		<div class="head">
+			<div class="logo">
+				<a href="index.html"><img src="SVG Stroke.svg" alt=""></a>
+			</div>
+			<div class="header">
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="reglog.html">Doctor</a></li>
+					<li><a href="donorreglog.html">Donor</a></li>
+				</ul>
+			</div>
+			<div class="logoi">
+				<i class="far fa-envelope fa-lg"></i>
+				<i class="far fa-question-circle fa-lg"></i>
+		    </div>
+		</div>
+			<!-- <div class="icon"><a href="index.html"><i class="fas fa-home fa-lg"></i></a></div> -->
+		<div id="particles-js"></div>
+		<div class="main" id="main">
+		<div id="title"> Sign in </div>
+			<form method="post" action="doclogin.php">
+				<div>
+					<input type="text" name="doctorid" placeholder="DoctorID" required>
+				</div>
+				<div>
+					<input type="password" name="pass" placeholder="Password" required>
+				</div>
+				<div>
+					<p>New User?  <a href="#" id="flipToSignUp"> Sign Up </a></p>
+				</div>
+				<div>
+					<button class="loginbutton" name="login">Sign in</button>
+				</div>
+			</form>
+		</div>
+		<div class="signUpForm" id="signUpForm">
+		<div id="title"> Sign Up </div>
+			<form method="post" action="doctorsign.php">
+				<div>
+					<input type="text" name="doctorname" placeholder="DoctorName" required>
+				</div>
+				<div>
+					<input type="text" name="workplace" placeholder="Workplace" required>
+				</div>
+				<div>
+					<input type="text" name="doctormobile" placeholder="Mobile Number" required>
+				</div>
+				<div>
+					<input type="password" name="pass" placeholder="Password" required>
+				</div>
+				<div check="check">
+				 <input type="checkbox" name="" value="" required>  <p2>I accept the <a href="">Terms and Conditions</a></p2>
+				</div>
+				<div>
+					<p>Already have an account? <a href="#" id="flipToSignIn">Sign In</a></p>
+				</div>
+				<div>
+					<button class="reg">Sign Up</button>
+				</div>
+			</form>
+		</div>
+
+	</div>
+	<script src="particles.js"></script>
+	<script src="app.js"></script>
+</body>
+</html>

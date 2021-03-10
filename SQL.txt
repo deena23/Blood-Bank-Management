@@ -1,0 +1,58 @@
+create table doctorsign(
+doctorid integer(4) NOT NULL AUTO_INCREMENT,
+doctorname char(30),
+workplace char(20),
+doctormobile integer(10),
+pass varchar(8),
+primary key(doctorid)
+);
+
+alter table doctorsign modify column doctormobile bigint(10);
+ ALTER TABLE doctorsign AUTO_INCREMENT = 3500;
+SELECT DATEDIFF(CURDATE(), donordate) AS last from docaddfun
+
+create table donorsign(
+donorname char(30),
+donorcity char(30),
+donormobile bigint(10),
+blood varchar(5),
+donordate date,
+pass varchar(10),
+primary key(donormobile)
+);
+
+
+create table docaddfun(
+donorname char(30),
+donorcity char(30),
+donormobile bigint(10),
+blood varchar(5),
+donordate date,
+primary key(donormobile)
+);
+
+
+
+
+
+
+
+
++12054311480
+
+
+
+
+           SELECT donorsign.donorname,
+                   donorsign.donorcity,
+                   donorsign.donormobile,
+                   donorsign.blood,
+                   donorsign.donordate,
+                   DATEDIFF(CURDATE(), donordate) AS last FROM donorsign
+                   UNION
+            SELECT docaddfun.donorname,
+                   docaddfun.donorcity,
+                   docaddfun.donormobile,
+                   docaddfun.blood,
+                   docaddfun.donordate,
+                   DATEDIFF(CURDATE(), donordate) AS last FROM docaddfun order by donorname;

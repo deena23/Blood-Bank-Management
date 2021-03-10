@@ -1,0 +1,140 @@
+*{
+    margin:0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+ body{
+        overflow-y: hidden;
+    }
+    #particles-js{
+    position: fixed;
+    //background:linear-gradient(to top,#f12711,#f5af19);
+    //background:linear-gradient(to right,#333333,#dd1818);
+    //background:linear-gradient(to right,#e65c00,#F9D423);
+    /*background: rgba(255, 143, 0,1.0);*/
+    height: 100vh;
+    width: 100%;
+}
+    .back{
+        height: 100vh;
+        width: 100%;
+       //background: rgba(255, 143, 0,1.0);
+       background:linear-gradient(to bottom,rgba(255, 143, 0,1.0) 50%,black 50%);
+       //background:#ffa801;
+       //background:#303952;
+       //background:#0c2461;
+    }
+
+        /*.wrapper{
+
+            width: 100%;
+        }*/
+        svg{
+            position: absolute;
+            top: 48%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            width: 30%;
+        }
+        path{
+            fill:#fff;
+            stroke:#fff;
+            stroke-dasharray: 1800;
+            opacity: 10;
+            animation:animate 2s cubic-bezier(0,0.23,1,.1);
+        }
+        @keyframes animate{
+            0%{
+                opacity: 0;
+                fill:none;
+                stroke-dashoffset:1800;
+            }
+            30%{
+                opacity: 10;
+                fill:none;
+                stroke-dashoffset:1800;
+            }
+            90%{
+                fill:rgba(255,255,255,0);
+            }
+            100%{
+                opacity: 10;
+                fill:rgba(255,255,255,1);
+                stroke-dashoffset:0;
+            }
+        }
+.arrow{
+    position: absolute;
+    top: 85%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    transform: rotate(45deg);
+    /*border:1px solid black;*/
+    animation:arrow 1s linear infinite alternate;
+}
+.arrow span{
+    display: block;
+    width: 40px;
+    height: 40px;
+    border: 2px solid #fff;
+    transform: rotate(-45deg);
+    border-right: none;
+    border-top:none;
+
+}
+@keyframes arrow{
+    0%{
+        transform: translateY(-10px);
+    }
+    50%{
+        transform: translateY(10px);
+    }
+    100%{
+        transform: translateY(15px);
+    }
+}
+#next{
+    height: 100vh;
+    width: 100%;
+    background: black;
+    /*background:linear-gradient(to top,rgba(255, 143, 0,1.0) 50%,black 50%);*/
+}
+.doctor,.donor{
+    height: 120px;
+    width: 120px;
+    padding: 5px;
+    background: white;
+    margin-right: 300px;
+    /*border: 1px solid white;*/
+    border-radius: 5px;
+    display: inline-block;
+    position: relative;
+    top: 50%;
+    left: 35%;
+    transform: translate(-50%,-50%);
+}
+img{
+    height: 100%;
+    width: 100%;
+}
+.arrow1{
+    height: 100px;
+    width: 100px;
+    background: black;
+    position: absolute;
+    top:195%;
+    left: 95%;
+    transform: translate(-50%,-50%);
+}
+.arrow1 span{
+    display: block;
+    width: 30px;
+    height: 30px;
+    border: 2px solid #fff;
+    transform: rotate(135deg);
+    border-right: none;
+    border-top:none;
+
+}
